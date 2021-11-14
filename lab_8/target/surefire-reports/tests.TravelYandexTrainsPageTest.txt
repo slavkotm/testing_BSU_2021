@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: tests.TravelYandexTrainsPageTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.958 sec
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 15.034 sec <<< FAILURE!
+browserSetup(tests.TravelYandexTrainsPageTest)  Time elapsed: 14.917 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'pirozhok-GF63-8RC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-38-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--headless, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080, --disable-extensions, --proxy-server='direct://', --proxy-bypass-list=*, --start-maximized, --disable-gpu, --ignore-certificate-errors], extensions: []}}, Capabilities {acceptInsecureCerts: true, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--headless, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080, --disable-extensions, --proxy-server='direct://', --proxy-bypass-list=*, --start-maximized, --disable-gpu, --ignore-certificate-errors], extensions: []}, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:198)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:172)
+	at tests.TravelYandexTrainsPageTest.browserSetup(TravelYandexTrainsPageTest.java:24)
+

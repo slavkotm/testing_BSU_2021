@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="1" name="tests.TravelYandexTrainsPageTest" time="14.917" errors="0" skipped="2">
+<testsuite tests="1" failures="0" name="tests.TravelYandexTrainsPageTest" time="8.445" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
@@ -61,49 +61,5 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.TravelYandexTrainsPageTest" name="browserSetup" time="14.917">
-    <failure message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;pirozhok-GF63-8RC&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-38-generic&apos;, java.version: &apos;11.0.11&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--headless, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080, --disable-extensions, --proxy-server=&apos;direct://&apos;, --proxy-bypass-list=*, --start-maximized, --disable-gpu, --ignore-certificate-errors], extensions: []}}, Capabilities {acceptInsecureCerts: true, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--headless, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080, --disable-extensions, --proxy-server=&apos;direct://&apos;, --proxy-bypass-list=*, --start-maximized, --disable-gpu, --ignore-certificate-errors], extensions: []}, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;pirozhok-GF63-8RC&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-38-generic&apos;, java.version: &apos;11.0.11&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--headless, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080, --disable-extensions, --proxy-server=&apos;direct://&apos;, --proxy-bypass-list=*, --start-maximized, --disable-gpu, --ignore-certificate-errors], extensions: []}}, Capabilities {acceptInsecureCerts: true, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--headless, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080, --disable-extensions, --proxy-server=&apos;direct://&apos;, --proxy-bypass-list=*, --start-maximized, --disable-gpu, --ignore-certificate-errors], extensions: []}, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:198)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:172)
-	at tests.TravelYandexTrainsPageTest.browserSetup(TravelYandexTrainsPageTest.java:24)
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7bb11784
-</system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1636928554464	geckodriver	INFO	Listening on 127.0.0.1:47651
-1636928554645	mozrunner::runner	INFO	Running command: &quot;/usr/lib/firefox/firefox&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;35745&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/tmp/rust_mozprofileqjtVLw&quot;
-1636928558903	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at /tmp/rust_mozprofileqjtVLw/search.json.mozlz4&quot;, (void 0)))
-DevTools listening on ws://localhost:35745/devtools/browser/304b38ef-5f0a-4386-b89e-b8a76ce0049c
-JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
-1636928568274	Marionette	INFO	Listening on port 44327
-Exiting due to channel error.
-</system-err>
-  </testcase>
-  <testcase classname="tests.TravelYandexTrainsPageTest" name="testSearchResultForTrainTicketsWithoutEnteringDate" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="tests.TravelYandexTrainsPageTest" name="quit" time="0">
-    <skipped/>
-  </testcase>
+  <testcase classname="tests.TravelYandexTrainsPageTest" name="testSearchResultForTrainTicketsWithoutEnteringDate" time="8.445"/>
 </testsuite>

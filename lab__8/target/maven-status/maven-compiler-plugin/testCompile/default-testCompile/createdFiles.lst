@@ -1,1 +1,3 @@
-tests/TravelSmorodinaAviaPageTest.class
+tests/TravelYandexTrainsPageTest.class
+pages/TravelYandexTrainsPage.class
+pages/AbstractPage.class

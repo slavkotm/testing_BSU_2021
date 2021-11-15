@@ -19,7 +19,9 @@ public class TravelSmorodinaAviaPageTest {
     @BeforeMethod
     public void setupBrowser() {
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments();
+        chromeOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080",
+                "--disable-extensions", "--proxy-server='direct://'", "--proxy-bypass-list=*", "--start-maximized",
+                "--disable-gpu", "--ignore-certificate-errors");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }

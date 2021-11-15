@@ -1,20 +1,15 @@
 package tests;
 
-import org.checkerframework.checker.units.qual.C;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pages.TravelYandexTrainsPage;
+import pages.TravelSmorodinaAviaPage;
 
-public class TravelYandexTrainsPageTest {
+public class TravelSmorodinaAviaPageTest {
 
     private WebDriver driver;
 
@@ -32,21 +27,7 @@ public class TravelYandexTrainsPageTest {
     @Test
     public void testSearchResultForTrainTicketsWithoutEnteringDate()
     {
-        String source = "Москва";
-        String destination = "Минск";
-        String date = "Сегодня";
 
-        TravelYandexTrainsPage trainsPage = new TravelYandexTrainsPage(driver)
-                .openPage()
-                .enterFrom(source)
-                .enterTo(destination)
-                .submit();
-        String sourceAndDestination = trainsPage.getSourceAndDestination();
-
-        Assert.assertTrue(
-                sourceAndDestination.contains(source)
-                        && sourceAndDestination.contains(destination)
-                        && trainsPage.getDateString().equals(date));
     }
 
     @AfterMethod

@@ -22,7 +22,7 @@ public class TravelYandexTrainsPageTest {
     public void browserSetup()
     {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080",
+        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080",
                 "--disable-extensions", "--proxy-server='direct://'", "--proxy-bypass-list=*", "--start-maximized",
                 "--disable-gpu", "--ignore-certificate-errors");
         driver = new ChromeDriver(options);

@@ -1,4 +1,7 @@
 .idea
 .iml
 /target
-.*
+.classpath
+.gitignore
+.project
+.settings

@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.Objects;
+
 public class SearchResultOnTravellingPageTest {
 
     private ChromeDriver driver;
@@ -34,7 +36,8 @@ public class SearchResultOnTravellingPageTest {
                 .completeWhichElement()
                 .searchInputDeparture(DEPARTURE_PLACE)
                 .searchInputArrival(ARRIVAL_PLACE);
-        Assert.assertEquals(searchResultOnTravellingPage.getArrivalCity(), searchResultOnTravellingPage.getDepartureCity());
+        Assert.assertFalse(searchResultOnTravellingPage.getArrivalCity() == ARRIVAL_PLACE);
+        Assert.assertFalse(searchResultOnTravellingPage.getDepartureCity() == DEPARTURE_PLACE);
     }
 
     @AfterMethod (alwaysRun = true)

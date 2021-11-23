@@ -36,8 +36,8 @@ public class SearchResultOnTravellingPageTest {
                 .completeWhichElement()
                 .searchInputDeparture(DEPARTURE_PLACE)
                 .searchInputArrival(ARRIVAL_PLACE);
-        Assert.assertFalse(searchResultOnTravellingPage.getArrivalCity() == ARRIVAL_PLACE);
-        Assert.assertFalse(searchResultOnTravellingPage.getDepartureCity() == DEPARTURE_PLACE);
+        Assert.assertFalse(searchResultOnTravellingPage.getArrivalCity().contains(ARRIVAL_PLACE));
+        Assert.assertFalse(searchResultOnTravellingPage.getDepartureCity().contains(DEPARTURE_PLACE));
     }
 
     @AfterMethod (alwaysRun = true)
